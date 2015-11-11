@@ -28,9 +28,9 @@ class DataManager {
   }
   
   class func loadDataFromURL(url: NSURL, completion:(data: NSData?, error: NSError?) -> Void) {
+    
     var session = NSURLSession.sharedSession()
     
-    // Use NSURLSession to get data from an NSURL
     let loadDataTask = session.dataTaskWithURL(url, completionHandler: { (data: NSData!, response: NSURLResponse!, error: NSError!) -> Void in
       if let responseError = error {
         completion(data: nil, error: responseError)
