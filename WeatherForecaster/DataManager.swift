@@ -9,8 +9,9 @@
 import Foundation
 
 // Go to http://openweathermap.org/api to get your own API key and replace in string
+// NOTE: In this branch only does my key appear for TA benefit
 // Will eventually move this to Forecast model and not default to Pittsburgh, but keep for initial exercise
-let ForecastURL = "http://api.openweathermap.org/data/2.5/forecast/city?id=5206379&APPID=YOUR_API_KEY_HERE"
+let ForecastURL = "http://api.openweathermap.org/data/2.5/forecast/city?id=5206379&APPID=ad83d72d867862de7a87faec3178ffa6"
 
 class DataManager {
   
